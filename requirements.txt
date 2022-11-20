@@ -1,0 +1,8 @@
+wandb
+torchmetrics[image]
+numpy
+pandas
+matplotlib
+tensorflow
+python-dotenv
+pillow
