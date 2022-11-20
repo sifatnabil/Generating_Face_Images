@@ -51,3 +51,6 @@ python -m src.models.inference_model # For inference
 
 **To see a Summary of the training process and metrics you can visit here: [WandB Run](https://wandb.ai/sifatnabil/pytorch-project-test/runs/2n91n68u/overview)**
 
+## Model Performance Over time
+
+![Model Performance GIF](reports/figures/dcgan_model_improvement.gif)

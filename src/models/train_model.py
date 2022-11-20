@@ -47,6 +47,9 @@ def initialize_models(NOISE_DIM, CHANNELS_IMG, FEATURES_GEN, FEATURES_DISC, devi
     return gen, disc
 
 def train():
+    wandb.login(key=os.getenv('WANDB_KEY'))
+    wandb.init(project="pytorch-project-test")
+
     ROOT_DIR = os.path.abspath(os.curdir)
     DATASET_PATH = os.path.join(ROOT_DIR, 'data', 'processed')
     dataloader = load_dataset(DATASET_PATH)
